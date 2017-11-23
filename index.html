@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive table</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Use bootstrap minified css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+
+	<!-- Latest compiled JavaScript --> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Internal CSS -->
+	<style type="text/css">
+
+		/* Set background color of table heading to orange */
+		th
+		{
+			background-color: orange;
+		}
+
+		/* Set background color of table heading to skyblue */
+		td
+		{
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+
+	<!-- using bootstrap class table table-bordered-->
+
+	<table style="margin-top: 30px;" class="table table-bordered">
+		<thead>
+			<!-- Using bootstrap row class for table row -->
+			<tr class="row">
+
+				<!-- As per the requirement allocating 
+					1 block  for Serial No column
+					2 blocks for First Name column
+					2 blocks for Last Name column
+
+					3 blocks for Email id column
+					4 blocks for Biography column 
+					from 12 blocks -->
+				 
+				<th class="col-md-1">Row</th>
+				<th class="col-md-2">First Name</th>
+				<th class="col-md-2">Last Name</th>   
+
+				<th class="col-md-3">Email</th>				 
+				<th class="col-md-4">Biography</th>
+				 
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr class="row">
+				 
+				<td class="col-md-1">1</td>
+				<td class="col-md-2">Virat</td>
+				<td class="col-md-2">Kohli</td>
+
+				<td class="col-md-3">kohli123@gmail.com</td>
+				<td class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</td>
+				 
+
+			<tr class="row">
+				 
+				<td class="col-md-1">2</td>
+				<td class="col-md-2">MS</td>
+				<td class="col-md-2">Dhoni</td>
+
+				<td class="col-md-3">dhoni456@gmail.com</td>
+				<td class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</td>
+				 
+			</tr>
+
+			<tr class="row">
+				 
+				<td class="col-md-1">3</td>
+				<td class="col-md-2">Rohit</td>
+				<td class="col-md-2">Sharma</td>
+
+				<td class="col-md-3">sharma789@gmail.com</td>
+				<td class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. </td>
+				 
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
